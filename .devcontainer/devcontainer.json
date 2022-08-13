@@ -1,13 +1,13 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.208.0/containers/rust
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.222.0/containers/rust
 {
-	"name": "Rust&Node",
+	"name": "Rust",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
 			// Use the VARIANT arg to pick a Debian OS version: buster, bullseye
 			// Use bullseye when on local on arm64/Apple Silicon.
-			"VARIANT": "bullseye"
+			"VARIANT": "buster"
 		}
 	},
 	"runArgs": [
@@ -41,9 +41,11 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "rustc --version",
 
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
-		"node": "16"
+		"git-lfs": "latest",
+		"node": "17",
+		"python": "3.10"
 	}
 }
