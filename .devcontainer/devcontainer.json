@@ -45,7 +45,7 @@
 	"remoteUser": "vscode",
 	"features": {
 		"git-lfs": "latest",
-		"node": "17",
-		"python": "3.10"
+		"node": "latest",
+		"golang": "latest"
 	}
 }
