@@ -46,6 +46,10 @@
 	"features": {
 		"git-lfs": "latest",
 		"node": "latest",
-		"golang": "latest"
+		"golang": "latest",
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "latest"
+		}
 	}
 }
